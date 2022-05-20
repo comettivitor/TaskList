@@ -6,14 +6,6 @@ const arr = []
 
 //Função que insere tarefas na lista usando DOM
 const btnClick = () =>{
-  const insertWithEnter = () =>{
-    document.addEventListener("keypress", function(e){
-      if(e.key === "Enter"){
-        
-      }
-    })
-  }
-  insertWithEnter()
     if(inputBtn.onclick){
       if(inputTask.value != ''){
       arr.push([inputTask.value, inputDate.value])
@@ -41,6 +33,14 @@ const btnClick = () =>{
         }
       }
       
+      //insere paragrafo e botão delete dentro de uma div
+      const divParagraph = document.createElement("div")
+      divParagraph.classList.add("divparagraph")
+      divParagraph.innerHTML
+      document.body.appendChild(divParagraph)
+      divParagraph.append(paragraph)
+      divParagraph.append(deleteBtn)
+
       }else{
         //retorna erro caso não satifaça a condição acima
         //cria uma mensagem informando onde está o erro e a mesma some depois de 2s
@@ -60,7 +60,7 @@ const btnClick = () =>{
             if(msg.parentNode){
               msg.parentNode.removeChild(msg)
             }
-          }, 2000)
+          }, 1500)
         }
         removeMessage();
       }
