@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista de tarefas</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <main>
-      <div class="container-box">
-        <h1>Lista de Tarefas</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header1">
+    <h2>"A má notícia é que o tempo voa. A boa é que você é o piloto!!"</h2>
+    <h1>Adicione suas tarefas e gerencie seu tempo!</h1>
+  </header>
 
-        <div class="container-list">
-          <input
-            type="text"
-            placeholder="Digite aqui sua tarefa..."
-            id="inputList"
-          />
-          <button id="button">Adicionar</button>
-        </div>
-      </div>
-
-      <div id="div2">
-        <ul id="taskList"></ul>
-      </div>
-    </main>
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+  <form class="container">
+    <header id="header2">
+      <h1>Liste suas tarefas</h1>
+    </header>
+    <div>
+      <label>Informe a tarefa:</label>
+      <input type="text" id="inputList" class="inputList" title="Informe uma tarefa!"/> 
+      <label>Prazo:</label>
+      <input type="date" id="inputDate" class="inputDate"/>
+    </div>
+    <input type="button" id="inputBtn" class="inputBtn" 
+    value="Adicionar" onclick="btnClick()"/>
+  </form>
+  <script src="index.js" type="text/javascript"></script>
+</body>
 </html>
