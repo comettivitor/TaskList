@@ -46,7 +46,7 @@ const btnClick = () =>{
         //cria uma mensagem informando onde está o erro e a mesma some depois de 2s
         const erroMessage = document.createElement("span")
         erroMessage.classList.add("erroMessage")
-        erroMessage.innerHTML = "Informe a tarefa!!"
+        erroMessage.innerHTML = "INFORME UMA TAREFA!!"
         //Adiciona o span delete ao nó pai body
         document.body.appendChild(erroMessage)
         

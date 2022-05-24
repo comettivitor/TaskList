@@ -1,4 +1,41 @@
-*{
+* {
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(31, 31, 31);
+  color: rgb(231, 227, 227);
+  box-shadow: 3px 3px 3px 2px rgba(31, 0, 0, 0.2)
+}
+
+body {
+  font-family: 'Corben';
+  width: 100%;
+  height: 100%;
+  background-color: rgb(57, 66, 85);
+}
+
+.container {
+  padding: 20px;
+  margin: 5px;
+}
+
+#header2 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: rgb(84, 84, 240);
+}
+
+.erroMessage {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  background-color: cornsilk;
+  color: crimson;
 }
