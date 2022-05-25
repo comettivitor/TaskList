@@ -29,7 +29,15 @@ body {
 #header2 {
   text-align: center;
   padding-bottom: 10px;
-  color: rgb(84, 84, 240);
+  color: rgb(128, 128, 184);
+  font-weight: bolder;
+
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .erroMessage {
@@ -38,4 +46,69 @@ body {
   display: flex;
   background-color: cornsilk;
   color: crimson;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.inputList {
+  width: 300px;
+  height: 20px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.inputDate {
+  width: 120px;
+  height: 20px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+label {
+  text-align: center;
+  color: rgb(128, 128, 184);
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bolder;
+
+}
+
+#div2{
+  padding: 10px;
+}
+
+#inputBtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  border-color: rgb(29, 28, 28);
+  background-color: rgb(29, 28, 28);
+  border-style: hidden;
+  color: whitesmoke;
+  font-family: 'Corben';
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 2px;
+}
+
+#inputBtn:hover {
+  background-color: rgb(73, 72, 72);
+  cursor: pointer;
+  color: black;
+}
+
+#inputBtn:active {
+  background-color: rgb(126, 125, 125);
+  color: black;
+
+}
+
+.divparagraph{
+  width: auto;
+  height: auto;
+  border: solid 1px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }

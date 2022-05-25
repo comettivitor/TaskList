@@ -8,8 +8,8 @@ const arr = []
 const btnClick = () =>{
     if(inputBtn.onclick){
       if(inputTask.value != ''){
-      arr.push([inputTask.value, inputDate.value])
-      
+          arr.push([inputTask.value, inputDate.value])
+    
       //Cria paragrafo a ser listado
       const paragraph = document.createElement("p")
       paragraph.classList.add("paragraph")
@@ -28,6 +28,7 @@ const btnClick = () =>{
         if(deleteBtn.onclick){
           paragraph.parentNode.removeChild(paragraph)
           deleteBtn.parentNode.removeChild(deleteBtn)
+          divParagraph.parentNode.removeChild(divParagraph)
           let index = arr.indexOf(paragraph)
           arr.splice(index, 1)
         }
